@@ -47,7 +47,7 @@ public class ProductE2ETest {
 		.log().all()
 		.statusCode(200) // -> assertions
 		.body("name", equalTo("Laptops"))
-		.body("price",equalTo("450.0"));
+		.body("price",equalTo("450.0F"));
 		}
 
 
