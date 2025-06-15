@@ -45,7 +45,7 @@ public class ProductE2ETest {
 		.post("/api/products") // -> action
 		.then() 
 		.log().all()
-		.statusCode(201) // -> assertions
+		.statusCode(200) // -> assertions
 		.body("name", equalTo("Laptops"))
 		.body("price",equalTo("450.0"));
 		}
